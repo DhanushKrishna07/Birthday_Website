@@ -1,0 +1,1749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Deepalakshmi</title>
+    <link rel="icon" href="data:image/svg+xml,
+    %3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E
+      %3Ctext y='0.9em' font-size='90'%3E💖%3C/text%3E
+    %3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        /* Page 1 Styles */
+        #page1 {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(135deg, #f5e1fd, #ffd1dc);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            animation: fadeInPage 1s ease-in;
+        }
+
+        .heart, .sparkle, .balloon, .emoji-circle, .emoji-wave, .confetti, .firework {
+            position: absolute;
+            animation: float 6s infinite;
+        }
+
+        .heart {
+            width: 20px;
+            height: 20px;
+            background: #ff69b4;
+            transform: rotate(45deg);
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: #ff69b4;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart::after {
+            left: 10px;
+            top: 0;
+        }
+
+        .sparkle {
+            width: 15px;
+            height: 15px;
+            background: #ffd700;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        .balloon {
+            width: 30px;
+            height: 40px;
+            background: #ff4500;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+
+        .confetti {
+            width: 8px;
+            height: 8px;
+            background: #00ff00;
+            border-radius: 2px;
+            animation: fallConfetti 5s infinite;
+        }
+
+        .firework {
+            width: 10px;
+            height: 10px;
+            background: #ff00ff;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            animation: burstFirework 4s infinite;
+        }
+
+        .emoji-circle {
+            font-size: 24px;
+            animation: circleMove 8s infinite;
+        }
+
+        .emoji-wave {
+            font-size: 24px;
+            animation: wave 10s infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(45deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(45deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fallConfetti {
+            0% {
+                transform: translateY(-100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        @keyframes burstFirework {
+            0% {
+                transform: scale(1) translateY(100vh);
+                opacity: 1;
+            }
+            50% {
+                transform: scale(2) translateY(0);
+                opacity: 0.7;
+            }
+            100% {
+                transform: scale(1) translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes circleMove {
+            0% {
+                transform: translate(0, 0) rotate(0deg);
+                opacity: 1;
+            }
+            25% {
+                transform: translate(20vw, -20vh) rotate(90deg);
+            }
+            50% {
+                transform: translate(40vw, 0) rotate(180deg);
+            }
+            75% {
+                transform: translate(20vw, 20vh) rotate(270deg);
+            }
+            100% {
+                transform: translate(0, 0) rotate(360deg);
+                opacity: 1;
+            }
+        }
+
+        @keyframes wave {
+            0% {
+                transform: translateX(-20vw) translateY(0);
+                opacity: 0.8;
+            }
+            50% {
+                transform: translateX(100vw) translateY(20vh);
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateX(220vw) translateY(0);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeInPage {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .message-box {
+            background: rgba(255, 255, 255, 0.3);
+            padding: 20px 40px;
+            border-radius: 15px;
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 28px;
+            color: transparent;
+            background: linear-gradient(45deg, #ff69b4, #ff4500);
+            -webkit-background-clip: text;
+            background-clip: text;
+            cursor: pointer;
+            animation: pulse 2s infinite, fadeInWithScale 1s;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .message-box:hover {
+            animation: hoverGlow 1s infinite;
+        }
+
+        .celebrate-box, .cake-box, .continue-box, .wish-box {
+            background: linear-gradient(45deg, #ff4500, #ff69b4);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 25px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+            animation: fadeInWithScale 1s;
+            transition: all 0.3s ease;
+        }
+
+        /* Ensure cake-box is visible when its page is active */
+        #page2 .cake-box {
+            display: block;
+        }
+
+        .celebrate-box:hover, .cake-box:hover, .continue-box:hover, .wish-box:hover {
+            animation: hoverGlow 1s infinite;
+            background: linear-gradient(45deg, #ffd700, #800080, #ff4500, #ff69b4);
+            background-size: 200%;
+            animation: gradientShift 3s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .bear-box {
+            margin-top: 20px;
+            display: none;
+            animation: fadeInWithScale 1s;
+        }
+
+        .bear-box img {
+            width: 350px;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+            }
+            50% {
+                transform: scale(1.05);
+                box-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+            }
+        }
+
+        @keyframes hoverGlow {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            }
+            50% {
+                transform: scale(1.1);
+                box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+            }
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInWithScale {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Page 2 Styles */
+        #page2 {
+            height: 100vh;
+            width: 100%;
+            background: #1a1a3d;
+            position: relative;
+            overflow: hidden;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            animation: fadeInPage 1s ease-in;
+        }
+
+        .star, .gift, .heart-emoji, .emoji-fade, .emoji-wave, .confetti, .firework {
+            position: absolute;
+            animation: floatStar 5s infinite;
+        }
+
+        .star {
+            width: 15px;
+            height: 15px;
+            background: #ffd700;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        .gift {
+            width: 20px;
+            height: 20px;
+            background: #ff4500;
+        }
+
+        .heart-emoji {
+            width: 20px;
+            height: 20px;
+            background: #ff69b4;
+            transform: rotate(45deg);
+        }
+
+        .heart-emoji::before,
+        .heart-emoji::after {
+            content: '';
+            width: 20px;
+            height: 20px;
+            background: #ff69b4;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .heart-emoji::before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart-emoji::after {
+            left: 10px;
+            top: 0;
+        }
+
+        .emoji-fade {
+            font-size: 24px;
+            animation: fadeDiagonal 6s infinite;
+        }
+
+        @keyframes floatStar {
+            0% {
+                transform: translateY(100vh);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes fadeDiagonal {
+            0% {
+                transform: translate(-20vw, 100vh);
+                opacity: 0;
+            }
+            50% {
+                transform: translate(100vw, -100vh);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(220vw, -300vh);
+                opacity: 0;
+            }
+        }
+
+        #page2 h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 48px;
+            color: transparent;
+            background: linear-gradient(45deg, #ffd700, #ff69b4);
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: slideIn 2s, fadeInWithScale 1s;
+        }
+
+        #page2 p {
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+            color: transparent;
+            background: linear-gradient(45deg, #ff4500, #e6e6fa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            margin: 20px 0;
+            animation: fadeInWithScale 1s;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        /* Page 3 Styles */
+        #page3 {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(135deg, #ffe6e6, #fff0f5);
+            position: relative;
+            overflow: hidden;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            animation: fadeInPage 1s ease-in;
+        }
+
+        .balloon, .gift-box, .sparkle, .emoji-scale, .emoji-wave, .confetti, .firework {
+            position: absolute;
+            animation: floatBalloon 7s infinite;
+        }
+
+        .balloon {
+            width: 30px;
+            height: 40px;
+            background: #ff69b4;
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+        }
+
+        .gift-box {
+            width: 25px;
+            height: 25px;
+            background: #ffd700;
+        }
+
+        .sparkle {
+            width: 15px;
+            height: 15px;
+            background: #ff4500;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        .emoji-scale {
+            font-size: 24px;
+            animation: scaleFloat 5s infinite;
+        }
+
+        @keyframes floatBalloon {
+            0% {
+                transform: translateY(110vh);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-110vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes scaleFloat {
+            0% {
+                transform: translateY(110vh) scale(1);
+                opacity: 1;
+            }
+            50% {
+                transform: translateY(0) scale(1.5);
+                opacity: 0.7;
+            }
+            100% {
+                transform: translateY(-110vh) scale(1);
+                opacity: 0;
+            }
+        }
+
+        .cake-container {
+            position: relative;
+            width: 350px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: fadeInWithScale 1s;
+        }
+
+        .cake {
+            position: relative;
+            width: 350px;
+            height: 250px;
+        }
+
+        .cake-layer1 {
+            position: absolute;
+            width: 100%;
+            height: 80px;
+            bottom: 0;
+            background: linear-gradient(to right, #8b4513, #a0522d);
+            border-radius: 20px 20px 0 0;
+            box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cake-layer2 {
+            position: absolute;
+            width: 80%;
+            height: 80px;
+            bottom: 80px;
+            left: 10%;
+            background: linear-gradient(to right, #fff, #f0e6ce);
+            border-radius: 15px 15px 0 0;
+            box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cake-layer3 {
+            position: absolute;
+            width: 60%;
+            height: 80px;
+            bottom: 160px;
+            left: 20%;
+            background: linear-gradient(to right, #ff69b4, #ff85c2);
+            border-radius: 10px 10px 0 0;
+            box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .frosting-drip {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><path d="M50 160 Q75 180 100 160 T150 160 T200 160 T250 160 T300 160" stroke="%23ff69b4" stroke-width="10" fill="%23ff69b4"/></svg>') no-repeat;
+            top: 0;
+            left: 0;
+            opacity: 0.8;
+        }
+
+        .sprinkles {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .sprinkle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+        }
+
+        /* Layer 1 Sprinkles */
+        .sprinkle:nth-child(1) { background: red; top: 230px; left: 120px; }
+        .sprinkle:nth-child(2) { background: blue; top: 240px; left: 150px; }
+        .sprinkle:nth-child(3) { background: yellow; top: 235px; left: 180px; }
+        .sprinkle:nth-child(4) { background: green; top: 230px; left: 200px; }
+        .sprinkle:nth-child(5) { background: purple; top: 240px; left: 220px; }
+        .sprinkle:nth-child(6) { background: orange; top: 225px; left: 100px; }
+        .sprinkle:nth-child(7) { background: pink; top: 245px; left: 250px; }
+        .sprinkle:nth-child(8) { background: cyan; top: 230px; left: 270px; }
+        .sprinkle:nth-child(9) { background: lime; top: 240px; left: 80px; }
+        .sprinkle:nth-child(10) { background: magenta; top: 235px; left: 50px; }
+
+        /* Layer 2 Sprinkles */
+        .sprinkle:nth-child(11) { background: red; top: 150px; left: 140px; }
+        .sprinkle:nth-child(12) { background: blue; top: 160px; left: 160px; }
+        .sprinkle:nth-child(13) { background: yellow; top: 155px; left: 180px; }
+        .sprinkle:nth-child(14) { background: green; top: 150px; left: 200px; }
+        .sprinkle:nth-child(15) { background: purple; top: 160px; left: 220px; }
+        .sprinkle:nth-child(16) { background: orange; top: 145px; left: 120px; }
+        .sprinkle:nth-child(17) { background: pink; top: 165px; left: 240px; }
+        .sprinkle:nth-child(18) { background: cyan; top: 150px; left: 260px; }
+
+        /* Layer 3 Sprinkles */
+        .sprinkle:nth-child(19) { background: red; top: 70px; left: 160px; }
+        .sprinkle:nth-child(20) { background: blue; top: 80px; left: 180px; }
+        .sprinkle:nth-child(21) { background: yellow; top: 75px; left: 200px; }
+        .sprinkle:nth-child(22) { background: green; top: 70px; left: 220px; }
+        .sprinkle:nth-child(23) { background: purple; top: 80px; left: 240px; }
+        .sprinkle:nth-child(24) { background: orange; top: 65px; left: 140px; }
+
+        .candle {
+            position: absolute;
+            width: 12px;
+            height: 40px;
+            background: repeating-linear-gradient(
+                45deg,
+                #f5f5f5 0px,
+                #f5f5f5 2px,
+                #dcdcdc 2px,
+                #dcdcdc 4px
+            );
+            border-radius: 3px;
+            z-index: 2;
+            box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .candle::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 8px;
+            background: #333;
+            top: -8px;
+            left: 5px;
+        }
+
+        .fire {
+            position: absolute;
+            width: 14px;
+            height: 20px;
+            background: linear-gradient(to bottom, #ff4500 30%, #ffff00 70%);
+            border-radius: 50% 50% 0 0;
+            top: -28px;
+            left: -1px;
+            cursor: pointer;
+            animation: flicker 0.3s infinite;
+            transition: opacity 0.3s;
+            box-shadow: 0 0 15px 5px rgba(255, 69, 0, 0.6), 0 0 25px 10px rgba(255, 255, 0, 0.4);
+        }
+
+        .fire::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 12px;
+            background: linear-gradient(to bottom, #ffff00 40%, transparent);
+            border-radius: 50% 50% 0 0;
+            top: 2px;
+            left: 3px;
+            opacity: 0.8;
+        }
+
+        .fire::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 10px;
+            background: rgba(128, 128, 128, 0.5);
+            border-radius: 2px;
+            top: -15px;
+            left: 6px;
+            animation: smoke 1.5s infinite;
+        }
+
+        @keyframes flicker {
+            0%, 100% { transform: scaleY(1) scaleX(1); opacity: 1; }
+            50% { transform: scaleY(1.2) scaleX(0.9); opacity: 0.9; }
+        }
+
+        @keyframes smoke {
+            0% { transform: translateY(0) translateX(0); opacity: 0.5; }
+            50% { transform: translateY(-10px) translateX(2px); opacity: 0.3; }
+            100% { transform: translateY(-20px) translateX(-2px); opacity: 0; }
+        }
+
+        .candle.off .fire {
+            opacity: 0;
+            pointer-events: none;
+            background: transparent;
+            box-shadow: none;
+        }
+
+        .candle.off .fire::before,
+        .candle.off .fire::after {
+            display: none;
+        }
+
+        /* Adjusted positions for 5 candles on the top layer (layer3) with slight tweak to first candle */
+        .candle:nth-child(1) { left: 90px; bottom: 150px; }
+        .candle:nth-child(2) { left: 92.5px; bottom: 245px; }
+        .candle:nth-child(3) { left: 145px; bottom: 245px; }
+        .candle:nth-child(4) { left: 197.5px; bottom: 245px; }
+        .candle:nth-child(5) { left: 250px; bottom: 245px; }
+
+        .birthday-message {
+            text-align: center;
+            font-family: 'Dancing Script', cursive;
+            font-size: 28px;
+            color: transparent;
+            background: linear-gradient(45deg, #ff69b4, #ffd700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            display: none;
+            animation: fadeIn 1s;
+            line-height: 1.5;
+        }
+
+        .birthday-message span {
+            color: transparent;
+            background: linear-gradient(45deg, #ff4500, #ff69b4);
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        /* Page 4 Styles */
+        #page4 {
+            height: 100vh;
+            width: 100%;
+            background: #e0f7ff;
+            position: relative;
+            overflow: hidden;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            animation: fadeInPage 1s ease-in;
+        }
+
+        #page4 .sparkle, #page4 .emoji-bounce, #page4 .emoji-wave, #page4 .confetti, #page4 .firework {
+            position: absolute;
+            z-index: 5;
+        }
+
+        #page4 .sparkle.side-left, #page4 .emoji-bounce.side-left, #page4 .confetti.side-left, #page4 .firework.side-left {
+            animation: moveRight 10s infinite;
+        }
+
+        #page4 .sparkle.side-right, #page4 .emoji-bounce.side-right, #page4 .confetti.side-right, #page4 .firework.side-right {
+            animation: moveLeft 10s infinite;
+        }
+
+        #page4 .sparkle.top, #page4 .emoji-bounce.top, #page4 .confetti.top, #page4 .firework.top {
+            animation: moveDown 12s infinite;
+        }
+
+        #page4 .sparkle.bottom, #page4 .emoji-bounce.bottom, #page4 .confetti.bottom, #page4 .firework.bottom {
+            animation: moveUp 12s infinite;
+        }
+
+        #page4 .sparkle {
+            width: 15px;
+            height: 15px;
+            background: #ff4500;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+
+        .emoji-bounce {
+            font-size: 24px;
+        }
+
+        @keyframes moveRight {
+            0% {
+                transform: translateX(-20vw);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(120vw);
+                opacity: 0;
+            }
+        }
+
+        @keyframes moveLeft {
+            0% {
+                transform: translateX(120vw);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(-20vw);
+                opacity: 0;
+            }
+        }
+
+        @keyframes moveDown {
+            0% {
+                transform: translateY(-20vh);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(120vh);
+                opacity: 0;
+            }
+        }
+
+        @keyframes moveUp {
+            0% {
+                transform: translateY(120vh);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-20vh);
+                opacity: 0;
+            }
+        }
+
+        #page4 h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 36px;
+            color: transparent;
+            background: linear-gradient(45deg, #ff4500, #800080);
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: fadeInWithScale 1s;
+        }
+
+        #page4 p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            color: transparent;
+            background: linear-gradient(45deg, #ff69b4, #ffd700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            margin: 10px 0;
+            animation: fadeInWithScale 1s;
+        }
+
+        .rose-line {
+            width: 100px;
+            height: 2px;
+            background: #ff69b4;
+            position: relative;
+            margin: 20px 0;
+            animation: fadeInWithScale 1s;
+        }
+
+        .rose-line::before {
+            content: '🌹';
+            position: absolute;
+            left: 50%;
+            top: -15px;
+            transform: translateX(-50%);
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            max-height: 450px;
+            overflow: hidden;
+            position: relative;
+            z-index: 10;
+        }
+
+        .gallery-image {
+            width: 150px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid white;
+            margin: 10px;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .gallery-image:nth-child(odd) {
+            transform: translateY(20px);
+        }
+
+        .gallery-image:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        /* Pop-up Styles */
+        .popup, .popup-wish, .popup-wish-granted, .popup-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+        .popup-content, .popup-wish-content, .popup-wish-granted-content {
+            background: #fff0f5;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .popup-image-content {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            width: 80%;
+            max-width: 500px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .close-btn, .close-btn-image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 16px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            transition: background 0.3s ease, color 0.3s ease, border 0.3s ease;
+        }
+
+        .close-btn {
+            background: #ff69b4;
+            color: #ffffff;
+            border: 2px solid #ff69b4;
+        }
+
+        .close-btn:hover {
+            background: #ff4500;
+            color: #ffffff;
+            border: 2px solid #ff4500;
+        }
+
+        .close-btn-image {
+            background: transparent;
+            color: #0000ff;
+            border: 2px solid #0000ff;
+        }
+
+        .close-btn-image:hover {
+            background: #0000ff;
+            color: #ffffff;
+            border: 2px solid #0000ff;
+        }
+
+        .popup-content h2, .popup-wish-content h2, .popup-wish-granted-content h2, .popup-image-content h2 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 28px;
+            color: transparent;
+            background: linear-gradient(45deg, #ffd700, #800080);
+            -webkit-background-clip: text;
+            background-clip: text;
+            position: relative;
+            width: 100%;
+            text-align: center;
+        }
+
+        .popup-line {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right, rgba(255, 105, 180, 0), #ff69b4 10%, #ff69b4 90%, rgba(255, 105, 180, 0));
+            margin: 8px 0;
+        }
+
+        .popup-content p, .popup-wish-content p, .popup-wish-granted-content p, .popup-image-content p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            color: transparent;
+            background: linear-gradient(45deg, #800080, #ffd700);
+            -webkit-background-clip: text;
+            background-clip: text;
+            margin: 10px 0;
+        }
+
+        .wish-message {
+            font-family: 'Dancing Script', cursive;
+            font-size: 20px;
+            color: transparent;
+            background: linear-gradient(45deg, #ff4500, #e6e6fa);
+            -webkit-background-clip: text;
+            background-clip: text;
+            margin: 10px 0;
+        }
+
+        .emoji {
+            font-size: 40px;
+            animation: floatEmoji 2s infinite;
+            display: inline-block;
+        }
+
+        .emoji-sequence {
+            margin: 10px 0;
+        }
+
+        .emoji-container {
+            display: block;
+            margin: 10px 0;
+        }
+
+        @keyframes floatEmoji {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .blow-candles, .wish-granted, .continue-celebrating {
+            background: linear-gradient(45deg, #ff4500, #ff69b4);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 25px;
+            font-family: 'Dancing Script', cursive;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+            animation: fadeInWithScale 1s;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .blow-candles:hover, .wish-granted:hover, .continue-celebrating:hover {
+            animation: hoverGlow 1s infinite;
+            background: linear-gradient(45deg, #ffd700, #800080, #ff4500, #ff69b4);
+            background-size: 200%;
+            animation: gradientShift 3s ease infinite;
+        }
+
+        .popup-confetti {
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #ffd700;
+            border-radius: 2px;
+            animation: fallConfetti 3s ease-out forwards;
+        }
+
+        @keyframes fallConfetti {
+            0% {
+                transform: translateY(-100%) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100%) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        .cracker {
+            position: absolute;
+            width: 6px;
+            height: 6px;
+            border-radius: 2px;
+            animation: burstCracker 4s ease-out forwards;
+            z-index: 101;
+        }
+
+        @keyframes burstCracker {
+            0% {
+                transform: translateY(-20vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(120vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+
+        /* Image Popup Styles */
+        .popup-image-content img {
+            width: 100%;
+            max-width: 400px;
+            border: 5px solid white;
+            border-radius: 10px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .popup-image-content .emoji-wave {
+            z-index: 5;
+        }
+    </style>
+</head>
+<body>
+    <audio id="bg-music" autoplay loop>
+        <source src="static/remo.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      
+    <!-- Page 1 -->
+    <div id="page1">
+        <div class="message-box">✨ I have something special for you ✨</div>
+        <button class="celebrate-box">✨ Celebrate with me 💖</button>
+        <div class="bear-box">
+            <img src="static/milk-and-mocha.gif" alt="Mocha White Bear">
+        </div>
+    </div>
+
+    <!-- Page 2 -->
+    <div id="page2">
+        <h1>Happy Birthday Deepalakshmi!!</h1>
+        <p>May your day be as special as you are!</p>
+        <button class="cake-box">Let's cut the cake 🎂</button>
+    </div>
+
+    <!-- Page 3 -->
+    <div id="page3">
+        <div class="cake-container">
+            <div class="cake">
+                <div class="cake-layer1"></div>
+                <div class="cake-layer2"></div>
+                <div class="cake-layer3"></div>
+                <div class="frosting-drip"></div>
+                <div class="sprinkles">
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                    <div class="sprinkle"></div>
+                </div>
+            </div>
+            <div class="candle"><div class="fire"></div></div>
+            <div class="candle"><div class="fire"></div></div>
+            <div class="candle"><div class="fire"></div></div>
+            <div class="candle"><div class="fire"></div></div>
+            <div class="candle"><div class="fire"></div></div>
+        </div>
+        <div class="birthday-message">
+            <span>✨</span> Happy Birthday Deepalakshmi <span>✨</span><br>
+            You make my world beautiful and bright!<br>
+            <span>💖</span> I cherish every moment with you <span>💖</span>
+        </div>
+        <button class="continue-box">Continue to Your Surprise ➡️</button>
+    </div>
+
+    <!-- Page 4 -->
+    <div id="page4">
+        <h2>✨ A small gift for you 🎁</h2>
+        <p>Celebrating all the amazing moments on this special day!</p>
+        <div class="rose-line"></div>
+        <div class="image-gallery">
+            <img src="static/image1.jpg" alt="Memory 1" class="gallery-image">
+            <img src="static/image2.jpg" alt="Memory 2" class="gallery-image">
+            <img src="static/image3.jpg" alt="Memory 3" class="gallery-image">
+            <img src="static/image4.jpg" alt="Memory 4" class="gallery-image">
+            <img src="static/image5.jpg" alt="Memory 5" class="gallery-image">
+            <img src="static/image6.jpg" alt="Memory 6" class="gallery-image">
+        </div>
+        <button class="wish-box" style="display: block;">Make A Birthday Wish 🥳</button>
+    </div>
+
+    <!-- First Popup -->
+    <div class="popup">
+        <div class="popup-content">
+            <span class="close-btn">×</span>
+            <h2>Make A Birthday Wish!</h2>
+            <div class="popup-line"></div>
+            <p class="initial-message">Close your eyes, make a wish, and blow out the candles on your special day!</p>
+            <div class="emoji-container">
+                <span class="emoji cake-emoji">🎂</span>
+                <span class="emoji star-emoji">✨</span>
+                <span class="emoji cake-emoji">🎂</span>
+            </div>
+            <button class="blow-candles">Blow Out Candles</button>
+        </div>
+    </div>
+
+    <!-- Second Popup (Wish Made) -->
+    <div class="popup-wish">
+        <div class="popup-wish-content">
+            <span class="close-btn">×</span>
+            <h2>Make A Birthday Wish!</h2>
+            <div class="popup-line"></div>
+            <div class="emoji-container">
+                <span class="emoji cake-emoji">🎂</span>
+                <span class="emoji star-emoji">💫</span>
+                <span class="emoji cake-emoji">🎂</span>
+            </div>
+            <button class="wish-granted">Wish Granted!</button>
+        </div>
+    </div>
+
+    <!-- Third Popup (Wish Granted) -->
+    <div class="popup-wish-granted">
+        <div class="popup-wish-granted-content">
+            <span class="close-btn">×</span>
+            <h2>Make A Birthday Wish!</h2>
+            <div class="popup-line"></div>
+            <p class="wish-message">Your wish has been made! May all your birthday dreams come true!</p>
+            <div class="emoji-sequence">
+                <span class="emoji">🎂</span>
+                <span class="emoji">🎉</span>
+                <span class="emoji">🎂</span>
+            </div>
+            <button class="continue-celebrating">💖 Continue Celebrating 💖</button>
+        </div>
+    </div>
+
+    <!-- Image Popup -->
+    <div class="popup-image">
+        <div class="popup-image-content">
+            <span class="close-btn-image">×</span>
+            <img src="" alt="Selected Memory" class="large-image">
+        </div>
+    </div>
+
+    <script>
+        // Generate animated hearts, sparkles, balloons, and emojis for Page 1
+        function createPage1Decor() {
+            for (let i = 0; i < 30; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDuration = 4 + Math.random() * 2 + 's';
+                document.getElementById('page1').appendChild(heart);
+            }
+            for (let i = 0; i < 20; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = Math.random() * 100 + 'vw';
+                sparkle.style.animationDuration = 3 + Math.random() * 2 + 's';
+                document.getElementById('page1').appendChild(sparkle);
+            }
+            for (let i = 0; i < 15; i++) {
+                const balloon = document.createElement('div');
+                balloon.className = 'balloon';
+                balloon.style.left = Math.random() * 100 + 'vw';
+                balloon.style.animationDuration = 5 + Math.random() * 2 + 's';
+                document.getElementById('page1').appendChild(balloon);
+            }
+            for (let i = 0; i < 15; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.animationDuration = 4 + Math.random() * 2 + 's';
+                document.getElementById('page1').appendChild(confetti);
+            }
+            for (let i = 0; i < 10; i++) {
+                const firework = document.createElement('div');
+                firework.className = 'firework';
+                firework.style.left = Math.random() * 100 + 'vw';
+                firework.style.animationDuration = 3 + Math.random() * 2 + 's';
+                document.getElementById('page1').appendChild(firework);
+            }
+            const emojis = ['🎈', '✨', '🎉', '🌟', '💖', '🎁'];
+            for (let i = 0; i < 15; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji-circle';
+                emoji.textContent = emojis[i % emojis.length];
+                emoji.style.left = Math.random() * 80 + 'vw';
+                emoji.style.top = Math.random() * 80 + 'vh';
+                emoji.style.animationDuration = 6 + Math.random() * 4 + 's';
+                document.getElementById('page1').appendChild(emoji);
+            }
+            for (let i = 0; i < 15; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji-wave';
+                emoji.textContent = emojis[i % emojis.length];
+                emoji.style.left = Math.random() * 50 + 'vw';
+                emoji.style.top = Math.random() * 80 + 'vh';
+                emoji.style.animationDuration = 8 + Math.random() * 4 + 's';
+                document.getElementById('page1').appendChild(emoji);
+            }
+        }
+
+        // Generate animated stars, gifts, hearts, and emojis for Page 2
+        function createPage2Decor() {
+            for (let i = 0; i < 20; i++) {
+                const star = document.createElement('div');
+                star.className = 'star';
+                star.style.left = Math.random() * 100 + 'vw';
+                star.style.animationDuration = 3 + Math.random() * 2 + 's';
+                document.getElementById('page2').appendChild(star);
+            }
+            for (let i = 0; i < 15; i++) {
+                const gift = document.createElement('div');
+                gift.className = 'gift';
+                gift.style.left = Math.random() * 100 + 'vw';
+                gift.style.animationDuration = 4 + Math.random() * 2 + 's';
+                document.getElementById('page2').appendChild(gift);
+            }
+            for (let i = 0; i < 15; i++) {
+                const heart = document.createElement('div');
+                heart.className = 'heart-emoji';
+                heart.style.left = Math.random() * 100 + 'vw';
+                heart.style.animationDuration = 3 + Math.random() * 2 + 's';
+                document.getElementById('page2').appendChild(heart);
+            }
+            for (let i = 0; i < 15; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.animationDuration = 4 + Math.random() * 2 + 's';
+                document.getElementById('page2').appendChild(confetti);
+            }
+            for (let i = 0; i < 10; i++) {
+                const firework = document.createElement('div');
+                firework.className = 'firework';
+                firework.style.left = Math.random() * 100 + 'vw';
+                firework.style.animationDuration = 3 + Math.random() * 2 + 's';
+                document.getElementById('page2').appendChild(firework);
+            }
+            const emojis = ['🌟', '🎁', '💖', '🎈', '✨', '🎂'];
+            for (let i = 0; i < 15; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji-fade';
+                emoji.textContent = emojis[i % emojis.length];
+                emoji.style.left = Math.random() * 50 + 'vw';
+                emoji.style.animationDuration = 5 + Math.random() * 3 + 's';
+                document.getElementById('page2').appendChild(emoji);
+            }
+            for (let i = 0; i < 15; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji-wave';
+                emoji.textContent = emojis[i % emojis.length];
+                emoji.style.left = Math.random() * 50 + 'vw';
+                emoji.style.top = Math.random() * 80 + 'vh';
+                emoji.style.animationDuration = 8 + Math.random() * 4 + 's';
+                document.getElementById('page2').appendChild(emoji);
+            }
+        }
+
+        // Generate animated balloons, gift boxes, sparkles, and emojis for Page 3
+        function createPage3Decor() {
+            for (let i = 0; i < 20; i++) {
+                const balloon = document.createElement('div');
+                balloon.className = 'balloon';
+                balloon.style.left = Math.random() * 100 + 'vw';
+                balloon.style.animationDuration = 5 + Math.random() * 2 + 's';
+                document.getElementById('page3').appendChild(balloon);
+            }
+            for (let i = 0; i < 15; i++) {
+                const gift = document.createElement('div');
+                gift.className = 'gift-box';
+                gift.style.left = Math.random() * 100 + 'vw';
+                gift.style.animationDuration = 4 + Math.random() * 2 + 's';
+                document.getElementById('page3').appendChild(gift);
+            }
+            for (let i = 0; i < 15; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle';
+                sparkle.style.left = Math.random() * 100 + 'vw';
+                sparkle.style.animationDuration = 3 + Math.random() * 2 + 's';
+                document.getElementById('page3').appendChild(sparkle);
+            }
+            for (let i = 0; i < 15; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.animationDuration = 4 + Math.random() * 2 + 's';
+                document.getElementById('page3').appendChild(confetti);
+            }
+            for (let i = 0; i < 10; i++) {
+                const firework = document.createElement('div');
+                firework.className = 'firework';
+                firework.style.left = Math.random() * 100 + 'vw';
+                firework.style.animationDuration = 3 + Math.random() * 2 + 's';
+                document.getElementById('page3').appendChild(firework);
+            }
+            const emojis = ['🎂', '🎁', '🎈', '✨', '🌟', '💖'];
+            for (let i = 0; i < 15; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji-scale';
+                emoji.textContent = emojis[i % emojis.length];
+                emoji.style.left = Math.random() * 100 + 'vw';
+                emoji.style.animationDuration = 4 + Math.random() * 3 + 's';
+                document.getElementById('page3').appendChild(emoji);
+            }
+            for (let i = 0; i < 15; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji-wave';
+                emoji.textContent = emojis[i % emojis.length];
+                emoji.style.left = Math.random() * 50 + 'vw';
+                emoji.style.top = Math.random() * 80 + 'vh';
+                emoji.style.animationDuration = 8 + Math.random() * 4 + 's';
+                document.getElementById('page3').appendChild(emoji);
+            }
+        }
+
+        // Generate animated sparkles and emojis for Page 4
+        function createPage4Decor() {
+            // Left side animations
+            for (let i = 0; i < 10; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle side-left';
+                sparkle.style.left = '0';
+                sparkle.style.top = Math.random() * 100 + 'vh';
+                sparkle.style.animationDuration = 8 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(sparkle);
+            }
+            for (let i = 0; i < 5; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji-bounce side-left';
+                emoji.textContent = ['🎁', '✨', '🌹', '🎈', '💖', '🎂'][i % 6];
+                emoji.style.left = '0';
+                emoji.style.top = Math.random() * 100 + 'vh';
+                emoji.style.animationDuration = 10 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(emoji);
+            }
+            for (let i = 0; i < 10; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti side-left';
+                confetti.style.left = '0';
+                confetti.style.top = Math.random() * 100 + 'vh';
+                confetti.style.animationDuration = 8 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(confetti);
+            }
+            for (let i = 0; i < 5; i++) {
+                const firework = document.createElement('div');
+                firework.className = 'firework side-left';
+                firework.style.left = '0';
+                firework.style.top = Math.random() * 100 + 'vh';
+                firework.style.animationDuration = 8 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(firework);
+            }
+
+            // Right side animations
+            for (let i = 0; i < 10; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle side-right';
+                sparkle.style.right = '0';
+                sparkle.style.top = Math.random() * 100 + 'vh';
+                sparkle.style.animationDuration = 8 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(sparkle);
+            }
+            for (let i = 0; i < 5; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji-bounce side-right';
+                emoji.textContent = ['🎁', '✨', '🌹', '🎈', '💖', '🎂'][i % 6];
+                emoji.style.right = '0';
+                emoji.style.top = Math.random() * 100 + 'vh';
+                emoji.style.animationDuration = 10 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(emoji);
+            }
+            for (let i = 0; i < 10; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti side-right';
+                confetti.style.right = '0';
+                confetti.style.top = Math.random() * 100 + 'vh';
+                confetti.style.animationDuration = 8 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(confetti);
+            }
+            for (let i = 0; i < 5; i++) {
+                const firework = document.createElement('div');
+                firework.className = 'firework side-right';
+                firework.style.right = '0';
+                firework.style.top = Math.random() * 100 + 'vh';
+                firework.style.animationDuration = 8 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(firework);
+            }
+
+            // Top animations
+            for (let i = 0; i < 10; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle top';
+                sparkle.style.top = '0';
+                sparkle.style.left = Math.random() * 100 + 'vw';
+                sparkle.style.animationDuration = 10 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(sparkle);
+            }
+            for (let i = 0; i < 5; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji-bounce top';
+                emoji.textContent = ['🎁', '✨', '🌹', '🎈', '💖', '🎂'][i % 6];
+                emoji.style.top = '0';
+                emoji.style.left = Math.random() * 100 + 'vw';
+                emoji.style.animationDuration = 12 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(emoji);
+            }
+            for (let i = 0; i < 10; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti top';
+                confetti.style.top = '0';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.animationDuration = 10 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(confetti);
+            }
+            for (let i = 0; i < 5; i++) {
+                const firework = document.createElement('div');
+                firework.className = 'firework top';
+                firework.style.top = '0';
+                firework.style.left = Math.random() * 100 + 'vw';
+                firework.style.animationDuration = 10 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(firework);
+            }
+
+            // Bottom animations
+            for (let i = 0; i < 10; i++) {
+                const sparkle = document.createElement('div');
+                sparkle.className = 'sparkle bottom';
+                sparkle.style.bottom = '0';
+                sparkle.style.left = Math.random() * 100 + 'vw';
+                sparkle.style.animationDuration = 10 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(sparkle);
+            }
+            for (let i = 0; i < 5; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji-bounce bottom';
+                emoji.textContent = ['🎁', '✨', '🌹', '🎈', '💖', '🎂'][i % 6];
+                emoji.style.bottom = '0';
+                emoji.style.left = Math.random() * 100 + 'vw';
+                emoji.style.animationDuration = 12 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(emoji);
+            }
+            for (let i = 0; i < 10; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'confetti bottom';
+                confetti.style.bottom = '0';
+                confetti.style.left = Math.random() * 100 + 'vw';
+                confetti.style.animationDuration = 10 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(confetti);
+            }
+            for (let i = 0; i < 5; i++) {
+                const firework = document.createElement('div');
+                firework.className = 'firework bottom';
+                firework.style.bottom = '0';
+                firework.style.left = Math.random() * 100 + 'vw';
+                firework.style.animationDuration = 10 + Math.random() * 4 + 's';
+                document.getElementById('page4').appendChild(firework);
+            }
+        }
+
+        // Generate confetti for popup
+        function createPopupConfetti() {
+            const popupContent = document.querySelector('.popup-content');
+            for (let i = 0; i < 50; i++) {
+                const confetti = document.createElement('div');
+                confetti.className = 'popup-confetti';
+                confetti.style.left = Math.random() * 100 + '%';
+                confetti.style.animationDuration = 2 + Math.random() * 2 + 's';
+                confetti.style.background = i % 2 === 0 ? '#ff4500' : '#ff69b4';
+                popupContent.appendChild(confetti);
+                setTimeout(() => confetti.remove(), 4000);
+            }
+        }
+
+        // Generate crackers for the entire page
+        function createCrackers() {
+            const colors = ['#ff4500', '#ff69b4', '#ffd700', '#800080', '#00ff00'];
+            for (let i = 0; i < 100; i++) {
+                const cracker = document.createElement('div');
+                cracker.className = 'cracker';
+                cracker.style.left = Math.random() * 100 + 'vw';
+                cracker.style.top = '-20vh';
+                cracker.style.background = colors[Math.floor(Math.random() * colors.length)];
+                cracker.style.animationDuration = 3 + Math.random() * 2 + 's';
+                document.body.appendChild(cracker);
+                setTimeout(() => cracker.remove(), 5000);
+            }
+        }
+
+        // Generate wave emojis for image popup
+        function createImagePopupDecor() {
+            const popupImage = document.querySelector('.popup-image-content');
+            const emojis = ['🎉', '✨', '🌟', '💖', '🎈', '🎁'];
+            for (let i = 0; i < 15; i++) {
+                const emoji = document.createElement('div');
+                emoji.className = 'emoji-wave';
+                emoji.textContent = emojis[i % emojis.length];
+                emoji.style.left = Math.random() * 100 + '%';
+                emoji.style.top = Math.random() * 100 + '%';
+                emoji.style.animationDuration = 8 + Math.random() * 4 + 's';
+                popupImage.appendChild(emoji);
+            }
+        }
+
+        // Page 1 interactions
+        const messageBox = document.querySelector('.message-box');
+        const celebrateBox = document.querySelector('.celebrate-box');
+        const bearBox = document.querySelector('.bear-box');
+
+        messageBox.addEventListener('click', () => {
+            messageBox.textContent = "💫 It's the most special day for you 🎈";
+            celebrateBox.style.display = 'block';
+            bearBox.style.display = 'block';
+        });
+
+        celebrateBox.addEventListener('click', () => {
+            document.getElementById('page1').style.display = 'none';
+            const page2 = document.getElementById('page2');
+            page2.style.display = 'flex';
+            const cakeBox = page2.querySelector('.cake-box');
+            cakeBox.style.display = 'block'; // Ensure the button is visible
+        });
+
+        // Page 2 interactions
+        const cakeBox = document.querySelector('.cake-box');
+        cakeBox.addEventListener('click', () => {
+            document.getElementById('page2').style.display = 'none';
+            document.getElementById('page3').style.display = 'flex';
+        });
+
+        // Page 3 interactions
+        const fires = document.querySelectorAll('.fire');
+        const birthdayMessage = document.querySelector('.birthday-message');
+        const continueBox = document.querySelector('.continue-box');
+        let firesOff = 0;
+
+        fires.forEach(fire => {
+            fire.addEventListener('click', () => {
+                fire.parentElement.classList.add('off');
+                firesOff++;
+                if (firesOff === 5) {
+                    birthdayMessage.style.display = 'block';
+                    continueBox.style.display = 'block';
+                }
+            });
+        });
+
+        continueBox.addEventListener('click', () => {
+            document.getElementById('page3').style.display = 'none';
+            document.getElementById('page4').style.display = 'flex';
+            createPage4Decor(); // Ensure animations are re-triggered
+        });
+
+        // Page 4 interactions
+        const wishBox = document.querySelector('.wish-box');
+        const popup = document.querySelector('.popup');
+        const popupWish = document.querySelector('.popup-wish');
+        const popupWishGranted = document.querySelector('.popup-wish-granted');
+        const blowCandles = document.querySelector('.blow-candles');
+        const wishGranted = document.querySelector('.wish-granted');
+        const continueCelebrating = document.querySelector('.continue-celebrating');
+
+        wishBox.addEventListener('click', () => {
+            popup.style.display = 'flex';
+        });
+
+        blowCandles.addEventListener('click', () => {
+            createPopupConfetti();
+            popup.style.display = 'none';
+            popupWish.style.display = 'flex';
+            createCrackers();
+        });
+
+        wishGranted.addEventListener('click', () => {
+            popupWish.style.display = 'none';
+            popupWishGranted.style.display = 'flex';
+        });
+
+        continueCelebrating.addEventListener('click', () => {
+            popupWishGranted.style.display = 'none';
+            document.getElementById('page4').style.display = 'none';
+            document.getElementById('page1').style.display = 'flex';
+            // Reset for replay
+            messageBox.textContent = "✨ I have something special for you ✨";
+            celebrateBox.style.display = 'none';
+            bearBox.style.display = 'none';
+            fires.forEach(fire => fire.parentElement.classList.remove('off'));
+            firesOff = 0;
+            birthdayMessage.style.display = 'none';
+            continueBox.style.display = 'none';
+        });
+
+        // Close button for wish popups
+        const closeButtons = document.querySelectorAll('.close-btn');
+        closeButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                popup.style.display = 'none';
+                popupWish.style.display = 'none';
+                popupWishGranted.style.display = 'none';
+            });
+        });
+
+        // Image popup interactions
+        const galleryImages = document.querySelectorAll('.gallery-image');
+        const popupImage = document.querySelector('.popup-image');
+        const popupImageContent = document.querySelector('.popup-image-content img');
+        const closeBtnImage = document.querySelector('.close-btn-image');
+
+        galleryImages.forEach(image => {
+            image.addEventListener('click', () => {
+                popupImageContent.src = image.src;
+                popupImage.style.display = 'flex';
+                createImagePopupDecor();
+            });
+        });
+
+        closeBtnImage.addEventListener('click', () => {
+            popupImage.style.display = 'none';
+            popupImageContent.src = '';
+            const waveEmojis = document.querySelectorAll('.popup-image-content .emoji-wave');
+            waveEmojis.forEach(emoji => emoji.remove());
+        });
+
+        popupImage.addEventListener('click', (e) => {
+            if (e.target === popupImage) {
+                popupImage.style.display = 'none';
+                popupImageContent.src = '';
+                const waveEmojis = document.querySelectorAll('.popup-image-content .emoji-wave');
+                waveEmojis.forEach(emoji => emoji.remove());
+            }
+        });
+
+        // Initialize animations
+        createPage1Decor();
+        createPage2Decor();
+        createPage3Decor();
+        createPage4Decor();
+
+        const audio = document.getElementById("bg-music");
+
+        // Try to play on page load
+        window.addEventListener("load", () => {
+          const tryPlay = () => {
+            audio.play().then(() => {
+              console.log("Audio autoplayed.");
+            }).catch((error) => {
+              console.warn("Autoplay failed. Waiting for user interaction.");
+              // Wait for first click to play audio
+              const unlockAudio = () => {
+                audio.play();
+                document.removeEventListener("click", unlockAudio);
+                console.log("Audio started after user interaction.");
+              };
+              document.addEventListener("click", unlockAudio);
+            });
+          };
+      
+          tryPlay();
+        });
+    </script>
+</body>
+</html>
